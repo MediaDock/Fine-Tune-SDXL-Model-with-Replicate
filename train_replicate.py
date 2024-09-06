@@ -4,7 +4,7 @@ import os
 
 #You need to create and name a API token on your Replicate account. This will generate a unique ID number/string.
 
-os.environ["REPLICATE_API_TOKEN"]="r8_564sKFhegBuNda8a1e0ehkC8XRfisL24BNLbT" #ID number/string of the generated Replicate token
+os.environ["REPLICATE_API_TOKEN"]="<TOKEN NUMBER>" #ID number/string of the generated Replicate token
 
 training = replicate.trainings.create(
     model="stability-ai/sdxl",
