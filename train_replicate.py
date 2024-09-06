@@ -11,11 +11,11 @@ training = replicate.trainings.create(
     version="39ed52f2a78e934b3ba6e2a89f5b1c712de7dfea535525255b1aa35c5565e08b",
     input={
       "input_images": "<https://server.com/dataset.zip>", #Link to your dataset (.zip file on a server)
-      "token_string": "TEST", #Name of token
-      "caption_prefix": "a photo of TEST", #Default description of image
+      "token_string": "<TOKEN>", #Name of token
+      "caption_prefix": "a photo of <TOKEN>", #Default description of image
       "max_train_steps": 1000,
       "use_face_detection_instead": False #Toggle face recocnition on (True) if working with images of faces
     },
     #You need to create a model on your Replicate account that will be the destination for the trained version.
-    destination="alepfa/test" #"Path", name of user and model
+    destination="<username/modelname>" #"Path", name of user and model
 )
